@@ -1,0 +1,111 @@
+$Red: hsl(0, 100%, 74%);
+$Green: hsl(154, 59%, 51%);
+$Blue: hsl(248, 32%, 49%);
+
+$DarkBlue: hsl(249, 10%, 26%);
+$GrayishBlue: hsl(246, 25%, 77%);
+
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "semibold": 600,
+  "bold": 700,
+);
+
+body {
+  background-color: $Red;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-image: url("/images/bg-intro-desktop.png");
+}
+
+.container {
+  height: 100vh;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-column {
+  color: white;
+  width: 35rem;
+  height: 20rem;
+
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+.top-card {
+  background-color: $Blue;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  p {
+    color: white;
+    text-align: center;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 35rem;
+  height: 30rem;
+  border-radius: 10px;
+
+  .box {
+    padding: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    input {
+      border-radius: 10px;
+      display: block;
+      height: 28px;
+      width: 90%;
+      font-size: 14px;
+      font-weight: map-get($font-weights, medium);
+    }
+  }
+}
+
+button {
+  height: 40px;
+  width: 85%;
+  background-color: $Green;
+  margin-left: 30px;
+  border-radius: 5px;
+  border: 1px solid hsl(154, 59%, 45%);
+  box-shadow: 0 2px hsl(154, 59%, 45%);
+  font-size: 14px;
+  font-weight: map-get($font-weights, semibold);
+  color: white;
+
+  &:hover {
+    box-shadow: 0 0 hsl(154, 59%, 45%);
+    transform: translateY(2px);
+  }
+}
+
+small {
+  font-size: 13px;
+  margin-left: 35px;
+  display: block;
+  color: $GrayishBlue;
+
+  a {
+    color: $Red;
+  }
+}
+
+footer {
+  font-size: 12px;
+  text-align: center;
+}

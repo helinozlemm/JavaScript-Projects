@@ -1,0 +1,112 @@
+body {
+  background-color: #ff7a7a;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-image: url("/images/bg-intro-desktop.png");
+}
+
+.container {
+  height: 100vh;
+  max-width: 1400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left-column {
+  color: white;
+  width: 35rem;
+  height: 20rem;
+}
+
+.left-column h1 {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.top-card {
+  background-color: #6055a5;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.top-card p {
+  color: white;
+  text-align: center;
+}
+
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  width: 35rem;
+  height: 30rem;
+  border-radius: 10px;
+}
+
+.form-container .box {
+  padding: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-container .box input {
+  border-radius: 10px;
+  display: block;
+  height: 28px;
+  width: 90%;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+button {
+  height: 40px;
+  width: 85%;
+  background-color: #38cc8c;
+  margin-left: 30px;
+  border-radius: 5px;
+  border: 1px solid #2fb67c;
+  -webkit-box-shadow: 0 2px #2fb67c;
+          box-shadow: 0 2px #2fb67c;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+button:hover {
+  -webkit-box-shadow: 0 0 #2fb67c;
+          box-shadow: 0 0 #2fb67c;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+small {
+  font-size: 13px;
+  margin-left: 35px;
+  display: block;
+  color: #b9b6d3;
+}
+
+small a {
+  color: #ff7a7a;
+}
+
+footer {
+  font-size: 12px;
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */
