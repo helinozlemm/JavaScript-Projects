@@ -12,6 +12,11 @@ $font-weights: (
   "bold": 700,
 );
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: $Red;
   font-family: "Poppins", sans-serif;
@@ -65,17 +70,34 @@ body {
     margin-bottom: 20px;
     text-align: center;
 
+    .form-control {
+      position: relative;
+    }
+
     input {
       border-radius: 10px;
       display: block;
-      height: 28px;
-      width: 90%;
+      height: 36px;
+      width: 100%;
       font-size: 14px;
       font-weight: map-get($font-weights, medium);
+      margin-bottom: 16px;
+      border-color: $DarkBlue;
+    }
+
+    .error-icon {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      z-index: 10;
     }
   }
 }
 
+input::placeholder {
+  color: $DarkBlue;
+  text-align: left;
+}
 button {
   height: 40px;
   width: 85%;
@@ -87,6 +109,7 @@ button {
   font-size: 14px;
   font-weight: map-get($font-weights, semibold);
   color: white;
+  cursor: pointer;
 
   &:hover {
     box-shadow: 0 0 hsl(154, 59%, 45%);
@@ -105,6 +128,16 @@ small {
   }
 }
 
+.form-control.error {
+  input {
+    border-color: $Red;
+    color: $Red;
+  }
+}
+
+.form-control.error input::placeholder {
+  color: $Red;
+}
 footer {
   font-size: 12px;
   text-align: center;

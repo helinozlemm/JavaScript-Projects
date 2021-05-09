@@ -1,7 +1,7 @@
 const form = document.getElementById("form");
 
 form.addEventListener("submit", (e) => {
-  e.preventDefault();
+  //e.preventDefault();
 
   const firstName = form["firstname"].value;
   const lastName = form["lastname"].value;
@@ -29,4 +29,15 @@ function validateEmail(email) {
   return re.test(String(email).toLowerCase());
 }
 
-function addError() {}
+function addError(value, message) {
+  const formControl = form[value].parentNode;
+  formControl.classList.add("error");
+
+  const paragraph = document.querySelector("small");
+  paragraph.innerHTML += message;
+}
+
+function removeError(value) {
+  const formControl = form[value].parentNode;
+  formControl.classList.remove("error");
+}

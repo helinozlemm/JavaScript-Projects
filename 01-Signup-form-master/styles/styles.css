@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: #ff7a7a;
   font-family: "Poppins", sans-serif;
@@ -64,13 +69,46 @@ body {
   text-align: center;
 }
 
+.form-container .box .form-control {
+  position: relative;
+}
+
 .form-container .box input {
   border-radius: 10px;
   display: block;
-  height: 28px;
-  width: 90%;
+  height: 36px;
+  width: 100%;
   font-size: 14px;
   font-weight: 500;
+  margin-bottom: 16px;
+  border-color: #3e3c49;
+}
+
+.form-container .box .error-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 10;
+}
+
+input::-webkit-input-placeholder {
+  color: #3e3c49;
+  text-align: left;
+}
+
+input:-ms-input-placeholder {
+  color: #3e3c49;
+  text-align: left;
+}
+
+input::-ms-input-placeholder {
+  color: #3e3c49;
+  text-align: left;
+}
+
+input::placeholder {
+  color: #3e3c49;
+  text-align: left;
 }
 
 button {
@@ -85,6 +123,7 @@ button {
   font-size: 14px;
   font-weight: 600;
   color: white;
+  cursor: pointer;
 }
 
 button:hover {
@@ -102,6 +141,27 @@ small {
 }
 
 small a {
+  color: #ff7a7a;
+}
+
+.form-control.error input {
+  border-color: #ff7a7a;
+  color: #ff7a7a;
+}
+
+.form-control.error input::-webkit-input-placeholder {
+  color: #ff7a7a;
+}
+
+.form-control.error input:-ms-input-placeholder {
+  color: #ff7a7a;
+}
+
+.form-control.error input::-ms-input-placeholder {
+  color: #ff7a7a;
+}
+
+.form-control.error input::placeholder {
   color: #ff7a7a;
 }
 
