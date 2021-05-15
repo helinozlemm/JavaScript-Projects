@@ -1,0 +1,70 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.container {
+  background-color: brown;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo_image {
+  width: 15vw;
+  background: chartreuse;
+  margin-left: 40px;
+}
+
+.left-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px;
+  background-color: cornflowerblue;
+}
+
+.left-column h1 {
+  text-transform: uppercase;
+  margin-top: 70px;
+  line-height: 4.5rem;
+  font-weight: 600;
+  letter-spacing: 8px;
+  margin-left: 40px;
+  font-size: 80px;
+}
+
+.left-column h1 span {
+  color: #ce9797;
+  font-weight: 300;
+}
+
+.left-column p {
+  color: #ce9797;
+  margin: 40px 160px 30px 40px;
+  line-height: 1.5rem;
+}
+
+.left-column form {
+  padding: 10px;
+  background-color: #430a7b;
+}
+
+.left-column form input {
+  margin-left: 30px;
+  height: 3rem;
+  width: 28rem;
+}
+/*# sourceMappingURL=style.css.map */

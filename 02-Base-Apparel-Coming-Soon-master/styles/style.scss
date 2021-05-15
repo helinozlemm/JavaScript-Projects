@@ -1,0 +1,69 @@
+$DesaturedRed: hsl(0, 36%, 70%);
+$SoftRed: hsl(0, 93%, 68%);
+$DarkGrayishRed: hsl(0, 6%, 24%);
+
+$font-weights: (
+  "regular": 300,
+  "medium": 400,
+  "bold": 600,
+);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.container {
+  background-color: brown;
+  display: flex;
+}
+
+.logo_image {
+  width: 15vw;
+  background: chartreuse;
+  margin-left: 40px;
+}
+.left-column {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  background-color: cornflowerblue;
+
+  h1 {
+    text-transform: uppercase;
+    margin-top: 70px;
+    line-height: 4.5rem;
+    font-weight: map-get($font-weights, bold);
+    letter-spacing: 8px;
+    margin-left: 40px;
+    font-size: 80px;
+
+    span {
+      color: $DesaturedRed;
+      font-weight: map-get($font-weights, regular);
+    }
+  }
+  p {
+    color: $DesaturedRed;
+    margin: 40px 160px 30px 40px;
+    line-height: 1.5rem;
+  }
+
+  form {
+    padding: 10px;
+    background-color: #430a7b;
+
+    input {
+      margin-left: 30px;
+      height: 3rem;
+      width: 28rem;
+    }
+  }
+}

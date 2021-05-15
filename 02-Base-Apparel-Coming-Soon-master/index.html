@@ -8,20 +8,46 @@
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
+  <link rel="stylesheet" href="styles/style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
+  <div class="container">
+    <div class="left-column">
+      <img src="images/logo.svg" alt="logo"  class="logo_image">
 
-  We're coming soon
+      
+      <h1><span>We're</span> <br>
+      coming <br>
+      soon</h1>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+      <p>Hello fellow shoppers! We're currently building our new fashion store. 
+      Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
 
-  Email Address
+        <form class="form-container" id="form">
+          <input type="email" id="email" placeholder="Email Address">
+          <img src="images/icon-error.svg" alt="error_icon" class="error">
+          <button id="send"> 
+            <img src="images/icon-arrow.svg" alt="button_img" class="button">
+          </button>
+      
+        </form>
+  
+    </div>
+
+    <div class="right-column">
+      <img src="images/hero-desktop.jpg" alt="desktop_picture">
+    </div>
+    
+ 
+  </div>
+
   
   <footer>
     <p class="attribution">
