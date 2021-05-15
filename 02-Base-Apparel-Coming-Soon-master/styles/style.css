@@ -12,7 +12,6 @@ body {
 }
 
 .container {
-  background-color: brown;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,8 +19,7 @@ body {
 
 .logo_image {
   width: 15vw;
-  background: chartreuse;
-  margin-left: 40px;
+  margin-left: 60px;
 }
 
 .left-column {
@@ -33,7 +31,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 50px;
-  background-color: cornflowerblue;
 }
 
 .left-column h1 {
@@ -42,7 +39,7 @@ body {
   line-height: 4.5rem;
   font-weight: 600;
   letter-spacing: 8px;
-  margin-left: 40px;
+  margin-left: 60px;
   font-size: 80px;
 }
 
@@ -53,18 +50,58 @@ body {
 
 .left-column p {
   color: #ce9797;
-  margin: 40px 160px 30px 40px;
-  line-height: 1.5rem;
+  margin: 40px 180px 30px 60px;
+  line-height: 1.8rem;
 }
 
-.left-column form {
+form {
   padding: 10px;
-  background-color: #430a7b;
 }
 
-.left-column form input {
-  margin-left: 30px;
+form input {
+  margin-left: 50px;
   height: 3rem;
   width: 28rem;
+  border-radius: 5rem;
+  outline: none;
+}
+
+form input::-webkit-input-placeholder {
+  color: #ce9797;
+  opacity: 0.7;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+form input:-ms-input-placeholder {
+  color: #ce9797;
+  opacity: 0.7;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+form input::-ms-input-placeholder {
+  color: #ce9797;
+  opacity: 0.7;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+form input::placeholder {
+  color: #ce9797;
+  opacity: 0.7;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+form button {
+  height: 3rem;
+  width: 5rem;
+  border-radius: 5rem;
+  outline: none;
+  cursor: pointer;
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+}
+
+form button:hover {
+  opacity: 0.9;
+  -webkit-box-shadow: 4px 4px 8px #f2d7d6;
+          box-shadow: 4px 4px 8px #f2d7d6;
 }
 /*# sourceMappingURL=style.css.map */
