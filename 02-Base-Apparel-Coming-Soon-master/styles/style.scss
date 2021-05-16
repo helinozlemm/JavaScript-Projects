@@ -2,6 +2,9 @@ $DesaturedRed: hsl(0, 36%, 70%);
 $SoftRed: hsl(0, 93%, 68%);
 $DarkGrayishRed: hsl(0, 6%, 24%);
 
+$color-white-1: hsl(0, 0%, 100%);
+$color-white-2: hsl(0, 100%, 98%);
+
 $font-weights: (
   "regular": 300,
   "medium": 400,
@@ -17,7 +20,8 @@ $font-weights: (
 body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
-  background-color: #fff;
+
+  background-image: linear-gradient(135deg, $color-white-1, $color-white-2);
 }
 
 .container {
@@ -57,6 +61,14 @@ body {
 
 form {
   padding: 10px;
+  position: relative;
+
+  .error_icon {
+    position: absolute;
+    z-index: 1;
+    left: 23rem;
+    top: 20px;
+  }
 
   input {
     margin-left: 50px;
@@ -64,6 +76,7 @@ form {
     width: 28rem;
     border-radius: 5rem;
     outline: none;
+    border: 1px solid #e3d1d3;
 
     &::placeholder {
       color: $DesaturedRed;
@@ -75,16 +88,27 @@ form {
     height: 3rem;
     width: 5rem;
     border-radius: 5rem;
+    border: 1px solid #e3d1d3;
     outline: none;
     cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 26.8rem;
+    z-index: 1;
     background-image: linear-gradient(
       135deg,
-      hsl(0, 80%, 86%),
-      hsl(0, 74%, 74%)
+      $color-primary-light,
+      $color-primary-dark
     );
+    background-image: linear-gradient(135deg, $DesaturedRed, $SoftRed);
+
     &:hover {
       opacity: 0.9;
       box-shadow: 4px 4px 8px #f2d7d6;
     }
   }
+}
+
+footer {
+  text-align: center;
 }

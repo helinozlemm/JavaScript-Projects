@@ -8,7 +8,7 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
-  background-color: #fff;
+  background-image: linear-gradient(135deg, white, #fff5f5);
 }
 
 .container {
@@ -56,6 +56,14 @@ body {
 
 form {
   padding: 10px;
+  position: relative;
+}
+
+form .error_icon {
+  position: absolute;
+  z-index: 1;
+  left: 23rem;
+  top: 20px;
 }
 
 form input {
@@ -64,6 +72,7 @@ form input {
   width: 28rem;
   border-radius: 5rem;
   outline: none;
+  border: 1px solid #e3d1d3;
 }
 
 form input::-webkit-input-placeholder {
@@ -94,8 +103,13 @@ form button {
   height: 3rem;
   width: 5rem;
   border-radius: 5rem;
+  border: 1px solid #e3d1d3;
   outline: none;
   cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 26.8rem;
+  z-index: 1;
   background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
 }
 
@@ -103,5 +117,9 @@ form button:hover {
   opacity: 0.9;
   -webkit-box-shadow: 4px 4px 8px #f2d7d6;
           box-shadow: 4px 4px 8px #f2d7d6;
+}
+
+footer {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
