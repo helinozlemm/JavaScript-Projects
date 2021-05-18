@@ -15,6 +15,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 100vh;
 }
 
 .logo_image {
@@ -79,24 +80,28 @@ form input::-webkit-input-placeholder {
   color: #ce9797;
   opacity: 0.7;
   font-family: "Josefin Sans", sans-serif;
+  padding-left: 2.5rem;
 }
 
 form input:-ms-input-placeholder {
   color: #ce9797;
   opacity: 0.7;
   font-family: "Josefin Sans", sans-serif;
+  padding-left: 2.5rem;
 }
 
 form input::-ms-input-placeholder {
   color: #ce9797;
   opacity: 0.7;
   font-family: "Josefin Sans", sans-serif;
+  padding-left: 2.5rem;
 }
 
 form input::placeholder {
   color: #ce9797;
   opacity: 0.7;
   font-family: "Josefin Sans", sans-serif;
+  padding-left: 2.5rem;
 }
 
 form button {
@@ -110,13 +115,27 @@ form button {
   top: 10px;
   left: 26.8rem;
   z-index: 1;
-  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  background-image: linear-gradient(135deg, #ce9797, #f96262);
 }
 
 form button:hover {
   opacity: 0.9;
   -webkit-box-shadow: 4px 4px 8px #f2d7d6;
           box-shadow: 4px 4px 8px #f2d7d6;
+}
+
+.errmessage {
+  color: #f96262;
+  padding-left: 6.2rem;
+  padding-top: 0.2rem;
+}
+
+.invisible {
+  display: none;
+}
+
+.visible {
+  display: block;
 }
 
 footer {

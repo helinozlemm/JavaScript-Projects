@@ -20,19 +20,19 @@ $font-weights: (
 body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
-
   background-image: linear-gradient(135deg, $color-white-1, $color-white-2);
 }
 
 .container {
   display: flex;
+  min-height: 100vh;
 }
 
 .logo_image {
   width: 15vw;
-
   margin-left: 60px;
 }
+
 .left-column {
   display: flex;
   flex-direction: column;
@@ -82,6 +82,7 @@ form {
       color: $DesaturedRed;
       opacity: 0.7;
       font-family: "Josefin Sans", sans-serif;
+      padding-left: 2.5rem;
     }
   }
   button {
@@ -95,11 +96,6 @@ form {
     top: 10px;
     left: 26.8rem;
     z-index: 1;
-    background-image: linear-gradient(
-      135deg,
-      $color-primary-light,
-      $color-primary-dark
-    );
     background-image: linear-gradient(135deg, $DesaturedRed, $SoftRed);
 
     &:hover {
@@ -109,6 +105,18 @@ form {
   }
 }
 
+.errmessage {
+  color: $SoftRed;
+  padding-left: 6.2rem;
+  padding-top: 0.2rem;
+}
+.invisible {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
 footer {
   text-align: center;
 }
